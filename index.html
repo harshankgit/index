@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Job Form</title>
+    <style>
+        .container {
+            width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .row {
+            margin-bottom: 20px;
+        }
+
+        .col {
+            float: left;
+            width: calc(50% - 10px);
+            /* 50% width with a little space between columns */
+            margin-right: 20px;
+        }
+
+        .col:last-child {
+            margin-right: 0;
+            /* Remove margin from last column */
+        }
+
+        .col-full {
+            width: 100%;
+            /* Full width for the last row */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+
+        .container1 {
+            width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .row {
+            margin-bottom: 20px;
+            overflow: hidden;
+            /* Clear floats */
+        }
+
+        .col {
+            float: left;
+            width: calc(50% - 10px);
+            margin-right: 20px;
+        }
+
+        .col:last-child {
+            margin-right: 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: calc(100% - 2px);
+            /* Adjust for border width */
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .header {
+            text-align: center;
+            border: 2px solid;
+            border-radius: 49px;
+            max-width: max-content;
+            padding: 0 20px;
+        }
+
+        .document-section {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .upload-btn {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .upload-btn input[type="file"] {
+            display: none;
+        }
+
+        .upload-btn label {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .upload-btn label:hover {
+            background-color: #45a049;
+        }
+
+        .box {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Hi Company Title</h1>
+    </div>
+
+    <div class="box">
+        <div class="container">
+            <h2>Create Job</h2>
+            <div class="row">
+                <div class="col">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="col">
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="text" id="mobile" name="mobile" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="text" id="dob" name="dob" required>
+                </div>
+                <div class="col">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-full">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-full">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-full">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container1">
+            <h2>Create Job</h2>
+
+            <div class="row">
+                <div class="col">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="col">
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="text" id="mobile" name="mobile" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="employee_id">Employee ID:</label>
+                    <input type="text" id="employee_id" name="employee_id" required>
+                </div>
+                <div class="col">
+                    <label for="department">Department:</label>
+                    <input type="text" id="department" name="department" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="date_of_joining">Company Date Of Joining:</label>
+                    <input type="text" id="date_of_joining" name="date_of_joining" required>
+                </div>
+                <div class="col">
+                    <label for="designation">Designation:</label>
+                    <select id="designation" name="designation" required>
+                        <option value="">Select Designation</option>
+                        <option value="Manager">Manager</option>
+                        <option value="Supervisor">Supervisor</option>
+                        <option value="Engineer">Engineer</option>
+                        <option value="Technician">Technician</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-full">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-full">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-full">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="document-section">
+        <h2>Document Section</h2>
+        <div class="upload-btn">
+            <label for="file-upload">Upload Document</label>
+            <input type="file" id="file-upload" name="file-upload">
+        </div>
+    </div>
+</body>
+
+</html>
